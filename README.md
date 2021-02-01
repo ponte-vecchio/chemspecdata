@@ -21,7 +21,25 @@
 	<sup>31</sup>P NMR : `\pnmr{<arg>}`
 	
 	TBD
+#### Key Example
 
+
+<sup>1</sup>H NMR ((CD<sub>3</sub>)<sub>2</sub>CO) δ 8.20 (br s, 1 H, PhOH) 7.14 (t, 1 H, *J* = 8.0 Hz, ArH para to PhOH) 6.89 (t, 1 H, *J* = 2.0 Hz,) 6.84 (d, 1 H, *J* = 8.0 Hz) 6.71 (dd, 1 H, *J* = 2.0, 8.0 Hz) 5.91 (br s, 1 H, NH) 4.68-4.72 (m, 1 H, CH) 4.50 (br s, 1 H, OH) 3.30–3.36 (m, 1 H, N–CH) 3.12–3.18 (m, 1 H, N–CH) 1.40 (s, 9 H, OC–CH<sub>3</sub>)
+```tex
+\hnmr[acetone]{%
+    [8.20,{br s},1,,{PhOH}],
+    [7.14,t,1,8.0,{ArH para to PhOH}],
+    [6.89,t,1,2.0],
+    [6.84,d,1,8.0],
+    [6.71,dd,1,{2.0, 8.0}],
+    [5.81,{br s},1,,{NH}],
+    [{4.68--4.71},m,1,,{CH}],
+    [4.50,{br s},1,,{OH}],
+    [{3.30--3.36},m,1,,{N-CH}],
+    [{3.12--3.18},m,1,,{N-CH}],
+    [1.40,s,9,,\ce{OC-CH3}]
+}%
+```
 ### Infrared (IR) Spectroscopy
 
 	TBD
