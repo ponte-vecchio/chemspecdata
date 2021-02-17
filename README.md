@@ -3,7 +3,7 @@
 ## Nuclear Magnetic Resonance (NMR) Spectroscopy
 ### Syntax
 ```
-	\< h | b | c | n | f | p >nmr[ < solvent > ]{ < peak > }
+	\< h | b | c | n | f | p >nmr[ <solvent>,<frequency> ]{ <peak> }
 ```
 
 	
@@ -44,6 +44,10 @@
 | `trifluoroethanol`, `tfe`  | TFE-<i>d</i><sub>3</sub> |
 | `methanol` | CD<sub>3</sub>OD |
 | `water` | D<sub>2</sub>O |
+
+#### Frequency
+
+Coupled with the `<solvent>` argument is the `<frequency>` argument which is to specify the frequency used 
 
 ### Key Example
 
