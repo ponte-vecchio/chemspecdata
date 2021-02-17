@@ -2,9 +2,11 @@
 
 ## Nuclear Magnetic Resonance (NMR) Spectroscopy
 ### Syntax
+```
+	\< h | b | c | n | f | p >nmr[ < solvent > ]{ < peak > }
+```
 
-	\< nuclei >nmr[ < solvent > ]{ < peak > }
-
+	
 ### Nuclei Types
 
 `chemspecdata` entails not only the most commonly used isotopes (<sup>1</sup>H & <sup>13</sup>C) but also lesser known isotopes e.g. <sup>11</sup>B (geochemistry), <sup>15</sup>N (heterocycles, protein analysis), <sup>19</sup>F (radiochemistry) and <sup>31</sup>P (inorganic/organometallic chemistry).
