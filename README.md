@@ -27,7 +27,7 @@
 
 #### Solvents
 
-`chemspecdata` allows for solvent shortcuts as well. List of common NMR solvents from [<i>Organometallics</i> 2010, 29, 9, 2176-2179](https://doi.org/10.1021/om100106e) were used and the outputs are mostly made to render as formulae as per [ACS guideline](https://pubsapp.acs.org/paragonplus/submission/acs_nmr_guidelines.pdf) unless inconvenient to do so (e.g. C<sub>6</sub>D<sub>6</sub> over benzene-<i>d</i><sub>6</sub>).
+`chemspecdata` allows for solvent shortcuts as well. List of common NMR solvents from [<i>Organometallics</i> 2010, 29, 9, 2176-2179](https://doi.org/10.1021/om100106e) were used and the outputs are mostly made to render as formulae as per [ACS guideline](https://pubsapp.acs.org/paragonplus/submission/acs_nmr_guidelines.pdf) unless inconvenient to do so (e.g. C<sub>6</sub>D<sub>6</sub> over benzene-<i>d</i><sub>6</sub>, but TFE-<i>d</i><sub>3</sub> over CF<sub>3</sub>CD<sub>2</sub>OD).
 
 | < argument > | output |
 | :--- | :--- |
