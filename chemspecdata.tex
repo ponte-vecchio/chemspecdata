@@ -1,0 +1,204 @@
+%_________________________________________________
+%
+% author : Leothelion
+% email: TBD
+% license: LaTeX Project Public License v1.3c
+%_________________________________________________
+%
+% CSD = chemspecdata
+%_________________________________________________
+%
+\def\CSDtitle{chemspecdata}
+\def\CSDversion{0.10alpha}
+\def\CSDdate{2021/02/12}
+%_________________________________________________
+%
+%
+%
+%
+%
+%
+%_________________________________________________
+%
+%_______________ P R E A M B L E__________________
+%_________________________________________________
+
+%% PROVIDES PACKAGE
+\ifdefined\ProvidesPackage\else
+\immediately\write -1 {%
+	Package: \CSDtitle\space\CFdate\spacev\CSDversion
+}%
+\fi
+
+%% CATCODE
+\begingroup
+\def\X#1{\catcode\number`#1=\number\catcode`#1\relax}
+\xdef\CSDrestorecatcode{\X\[\X\]\X\:\X\(\X\)\X\,\X\-\X\=\X\~\X\!\X\?\X\<\X\>\X\;\X\*\X\|\X\@\X\ \X\_}
+\endgroup
+\catcode`\[12
+\catcode`\]12 
+\catcode`\:12 
+\catcode`\(12
+\catcode`\)12 
+\catcode`\,12 
+\catcode`\-12 
+\catcode`\=12
+\catcode`\~12 
+\catcode`\!12 
+\catcode`\?12 
+\catcode`\<12
+\catcode`\>12 
+\catcode`\;12 
+\catcode`\*12 
+\catcode`\|12
+\catcode`\@12 
+\catcode`\#6  
+\catcode`\ 10 
+\catcode`\_11
+
+%% LOAD MHCHEM
+\RequirePackage[version = 4]{mhchem}
+
+%% LOAD SIMPLE KV
+\RequirePackage{simplekv}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                   N M R                      %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%_________________________________________________
+%
+%                  H -  N M R
+%_________________________________________________
+
+%% KEY-VAL PARAMS
+\def\setCSD_NMR_H{\setKV[hnmr]}
+\def\resetCSD{%
+	\setKVdefault[hnmr]{%
+		solvent			= CDCl3,
+		freq			= 400,
+		key				= {}
+	}%
+}%
+\resetCSD
+%_________________________________________________
+%
+%                  B -  N M R
+%_________________________________________________
+
+%% KEY-VAL PARAMS
+\def\setCSD_NMR_B{\setKV[bnmr]}
+\def\resetCSD{%
+	\setKVdefault[bnmr]{%
+		solvent			= CDCl3,
+		freq			= 128,
+		key				= {}
+	}%
+}%
+\resetCSD
+
+%_________________________________________________
+%
+%                  C -  N M R
+%_________________________________________________
+
+%% KEY-VAL PARAMS
+\def\setCSD_NMR_C{\setKV[cnmr]}
+\def\resetCSD{%
+	\setKVdefault[cnmr]{%
+		solvent			= CDCl3,
+		freq			= 100,
+		key				= {}
+	}%
+}%
+\resetCSD
+
+%_________________________________________________
+%
+%                  N -  N M R
+%_________________________________________________
+
+%% KEY-VAL PARAMS
+\def\setCSD_NMR_N{\setKV[nnmr]}
+\def\resetCSD{%
+	\setKVdefault[nnmr]{%
+		solvent			= CDCl3,
+		freq			= 40,
+		key				= {}
+	}%
+}%
+\resetCSD
+
+%_________________________________________________
+%
+%                  F -  N M R
+%_________________________________________________
+
+%% KEY-VAL PARAMS
+\def\setCSD_NMR_F{\setKV[fnmr]}
+\def\resetCSD{%
+	\setKVdefault[fnmr]{%
+		solvent			= CDCl3,
+		freq			= 377,
+		key				= {}
+	}%
+}%
+\resetCSD
+
+%_________________________________________________
+%
+%                  P -  N M R
+%_________________________________________________
+
+%% KEY-VAL PARAMS
+\def\setCSD_NMR_P{\setKV[pnmr]}
+\def\resetCSD{%
+	\setKVdefault[pnmr]{%
+		solvent			= CDCl3,
+		freq			= 128,
+		key				= {}
+	}%
+}%
+\resetCSD
+
+
+
+
+% \{ }nmr : command name
+% [1] : takes in one arg
+% [CDCl3] : default arg = chloroform if no arg is entered
+% {\ce ...} : output
+
+%% ISOTOPE OPTIONS %%
+% 1H NMR
+\newcommand{\hnmr}[1][CDCl3]{\ce{^{1}H} NMR (\ce{#1}) $\delta$}
+
+% 11B NMR
+\newcommand{\bnmr}[1][CDCl3]{\ce{^{11}B} NMR (\ce{#1}) $\delta$}
+
+% 13C NMR
+\newcommand{\cnmr}[1][CDCl3]{\ce{^{13}C} NMR (\ce{#1}) $\delta$}
+
+% 15N NMR
+\newcommand{\nnmr}[1][CDCl3]{\ce{^{15}
+		N} NMR (\ce{#1}) $\delta$}
+
+% 19F NMR
+\newcommand{\fnmr}[1][CDCl3]{\ce{^{19}F} NMR (\ce{#1}) $\delta$}
+
+% 31P NMR
+\newcommand{\pnmr}[1][CDCl3]{\ce{^{31}P} NMR (\ce{#1}) $\delta$}
+
+%% SOLVENT OPTIONS %%
+% Fallback option - render in \ce{}
+
+% THF-d8
+% CD2Cl2
+% toluene-d8
+% C6D6
+% C6D5Cl
+% acetone
+% DMSO
+% MeCN
+% TFE-d3
+% CD3OD
+% D2O

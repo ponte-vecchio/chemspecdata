@@ -1,0 +1,22 @@
+# MacOS Junk
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+.apdisk
+Network Trash Folder
+Temporary Items
+._*
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# TeX Output Files Other than .tex
+*.aux
+*.log
+*.pdf
