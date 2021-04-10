@@ -1,3 +1,12 @@
+<center>
+	
+![GitHub](https://img.shields.io/github/license/ponte-vecchio/chemspecdata?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/ponte-vecchio/chemspecdata?style=flat-square)
+![GitHub top language](https://img.shields.io/github/languages/top/ponte-vecchio/chemspecdata?style=flat-square)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/y/ponte-vecchio/chemspecdata?label=average%20commit&style=flat-square)
+
+</center>
+
 `chemspecdata` is a LaTeX package that allows the user to easily label spectroscopic data, notably in the field of chemical sciences.
 
 ## Nuclear Magnetic Resonance (NMR) Spectroscopy
